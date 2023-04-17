@@ -1,15 +1,8 @@
 {
-  "name": "api-gpt-atualizado",
-  "version": 2,
-  "public": true,
-  "build": {
-    "src": "api/index.js",
-    "use": "@vercel/node"
-  },
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/"
+      "src": "/(.*)",
+      "dest": "/"
     }
   ]
 }
